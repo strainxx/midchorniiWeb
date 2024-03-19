@@ -1,0 +1,12 @@
+{
+    "name": "midchornii",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "clear && node .",
+      "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC"
+  }

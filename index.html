@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midchornii</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body{
+            
+            background-color: #A8CD9F;
+            
+        }
+        .onest-f {
+            font-family: "Onest", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+        }
+        .container-top{
+            /* position: absolute; */
+            border-radius: 10px;
+            margin: 0 auto;
+            text-align: center;
+            background-image: url("static/ava.png");
+            background-repeat: no-repeat;
+            background-blend-mode: lighten;
+            /* background-color: rgba(255,255,255,1); */
+            background-position: center;
+            /* background-attachment: fixed;  */
+            background-size: cover;
+            font-size: 60px;
+            background-size:100% 100%;
+
+            height: 50vh;
+            width: 90vw;
+            padding: 10px;
+            transition-duration: 1s;
+        }
+        .white{
+            background-blend-mode: lighten;
+            background-color: rgba(255,255,255,0);
+            background-color: #E2F4C5;
+            transition-duration: 1s;
+        }
+        .title{
+            margin: 0 auto;
+            border-radius: 12px;
+            height: auto;
+            width: 50vw;
+            background-color: #dddddd67;
+            margin-bottom: 10%;
+        }
+        .desc{
+            /* padding-t: 10px; */
+            margin: 0 auto;
+            border-radius: 12px;
+            height: auto;
+            font-size: 30px;
+            width: 80vw;
+            color: #ffffff;
+            background-color: #1b181867;
+        }
+        .try{
+            border: none;
+            height: 8vh;
+            width: 140px;
+            background-color: #008DDA;
+            border-radius: 7px;
+        }
+        .rew{
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #E2F4C5;
+            width: 24vw;
+            height: 10vh;
+            margin: 30px;
+            margin-left: 4.3vw;
+            padding: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-top onest-f">
+        <div class="title">Midchornii</div>
+    <div class="desc">AI text-to-image revolution</div>
+    <button class="try onest-f" onclick="alert('01.04.2024 🐱')">Try NOW</button>
+    
+</div>
+<div class="rew onest-f">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt=""><br>This is so good<br>- Ryan Gosling</div>
+<div class="rew onest-f"><img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt=""><br>Говно<br>- Anonymous</div>
+<div class="rew onest-f"><img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt="">
+    <img style="height: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Black_Star.svg/432px-Black_Star.svg.png" alt=""><br>VERY GOOD<br>- Idk who</div>
+<script>
+    function choose(choices) {
+        var index = Math.floor(Math.random() * choices.length);
+        return choices[index];
+    }
+
+    let w = true
+    let imgs = ["./static/ava.png", "./static/image.png", "./static/image2.png", "./static/image3.png"]
+    function whi() {
+        var cool = 1000;
+        if(w == false){
+            cool = 1000;
+            document.getElementsByClassName("container-top")[0].classList.add("white")
+        }
+        else{
+            cool = 10000;
+            document.getElementsByClassName("container-top")[0].style.backgroundImage = `url(${choose(imgs)})`;
+            document.getElementsByClassName("container-top")[0].classList.remove("white")
+        }
+        w = !w
+        setTimeout(whi, cool)
+    }
+    document.getElementsByClassName("container-top")[0].style.backgroundImage = `url(${imgs[0]})`;
+    whi()
+    
+</script>
+</body>
+</html>
