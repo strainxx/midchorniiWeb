@@ -15,7 +15,7 @@ server.on('request', (req, res) => {
         res.write(rs)
         res.end()
     }
-    let rs = fs.createReadStream("index.html")
+    let rs = fs.createReadStream("./index.html")
     res.writeHead(200, {
         'Content-Type': 'text/html',
     })
