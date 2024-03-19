@@ -22,6 +22,6 @@ server.on('request', (req, res) => {
     rs.pipe(res)
 })
 
-server.listen("8080", ()=>{
+server.listen("80", ()=>{
     console.log("Server started!")
 })
