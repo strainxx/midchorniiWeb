@@ -8,12 +8,14 @@ const server = http.createServer()
 server.on('request', (req, res) => {
     if (req.url.match("static")){
         console.log(req.url);
-        let rs = fs.readFileSync(`.${req.url}`)
-        res.writeHead(200, {
-            'Content-Type': 'image/png',
-        })
-        res.write(rs)
-        res.end()
+        try{
+            let rs = fs.readFileSync(`.${req.url}`)
+            res.writeHead(200, {
+                'Content-Type': 'image/png',
+            })
+            res.write(rs)
+            res.end()
+        } catch {}
     }
     let rs = fs.createReadStream("./index.html")
     res.writeHead(200, {
